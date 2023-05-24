@@ -257,6 +257,7 @@ section.treatments > h2{
     color: #698293;
     text-align: center;
     font-size: 18px;
+
 }
 
 section.treatments > div.container{
@@ -278,6 +279,50 @@ div.treatment-single p{
     color: #b4b4b4;
 }
 
+/*-----*/
+
+/*Section Depoiments*/
+
+section.depoiments > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.depoiments div.container{
+    padding: 80px 0;
+    max-width: 400px;
+}
+
+section.depoiments div.depoiment-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+div.depoiment-single q{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+div.depoiment-single div.depoiment-name{
+    padding: 19px 0;
+}
+
+div.depoiment-name img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+div.depoiment-name span{
+    position: relative;
+    top: 4px;
+    font-size: 13px;
+    color: #b4b4b4;
+    display: inline-block;
+    vertical-align: top;
+}
 /*-----*/
 
 /* Media Queries */
