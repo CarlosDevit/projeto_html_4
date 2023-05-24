@@ -55,10 +55,10 @@ header nav.menu-mobile ul {
     list-style-type: none;
 }
 
-header nav.menu-mobile ul li{
+header nav.menu-mobile ul li {
     text-transform: uppercase;
     padding: 15px 2%;
-    
+
 }
 
 
@@ -78,7 +78,8 @@ header nav.menu-desktop ul li {
     text-transform: uppercase;
 }
 
-header nav.menu-desktop ul li a, header nav.menu-mobile ul li a {
+header nav.menu-desktop ul li a,
+header nav.menu-mobile ul li a {
     text-decoration: none;
     color: #b4b4b4;
 
@@ -161,20 +162,20 @@ section.services>div.container div.box-service:nth-of-type(3) {
 
 /*Section profile-container */
 
-section.profile-container{
+section.profile-container {
     padding: 40px 2%;
 }
 
-section.profile-container div.container{
+section.profile-container div.container {
     max-width: 800px;
 }
 
-section.profile-container div.profile-wraper{
+section.profile-container div.profile-wraper {
     padding-top: 60%;
     position: relative;
 }
 
-section.profile-container div.profile-wraper2{
+section.profile-container div.profile-wraper2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -185,7 +186,7 @@ section.profile-container div.profile-wraper2{
 
 }
 
-section.profile-container div.img-profile{
+section.profile-container div.img-profile {
     width: 40%;
     height: 100%;
     background-image: url(../images/img_profile.png);
@@ -193,53 +194,101 @@ section.profile-container div.img-profile{
 
 }
 
-section.profile-container div.text-profile{
+section.profile-container div.text-profile {
     width: 60%;
     padding: 0 30px;
 }
 
-section.profile-container div.text-profile h2{
+section.profile-container div.text-profile h2 {
     text-transform: uppercase;
     color: #698293;
     font-size: 18px;
 
 }
 
-section.profile-container div.text-profile p{
+section.profile-container div.text-profile p {
     color: #4b4b4b;
     font-size: 14px;
     margin-top: 8px;
     text-align: justify;
 }
+
 /*-----*/
 
 
 /*Section Videos*/
 
-section.videos{
+section.videos {
     padding: 50px 2%;
 }
 
-section.videos div.box-video{
+section.videos div.box-video {
     float: left;
     width: 33.3%;
-    background-color: green;
+    position: relative;
+    border: 5px solid white;
+    /*background-color: green;*/
     padding-top: calc(33.3% * 0.6);
 }
 
+section.videos iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
 
 /*-----*/
 
+/*Section Treatments */
+
+section.treatments{
+    padding: 70px 2%;
+}
+
+section.treatments div.treatment-container{
+    float: left;
+    width: 33.3%;
+}
+
+section.treatments > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.treatments > div.container{
+    padding: 80px 0;
+}
+
+div.treatment-single{
+    padding: 20px;
+}
+
+div.treatment-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+div.treatment-single p{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+/*-----*/
 
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
 
-    header nav.menu-desktop{
+    header nav.menu-desktop {
         display: none;
     }
 
-    header nav.menu-mobile{
+    header nav.menu-mobile {
         display: block;
     }
 
@@ -257,7 +306,7 @@ section.videos div.box-video{
         position: relative;
         top: -30px;
         */
-        flex-direction: column;   
+        flex-direction: column;
     }
 
     section.services>div.container div.box-service p {
@@ -266,27 +315,27 @@ section.videos div.box-video{
         font-weight: normal;
         font-size: 12px;
     }
-    
+
     section.services>div.container div.box-service:nth-of-type(1) {
         width: 90%;
         max-width: 350px;
     }
-    
+
     section.services>div.container div.box-service:nth-of-type(2) {
         width: 94%;
         max-width: 380px;
     }
-    
+
     section.services>div.container div.box-service:nth-of-type(3) {
         width: 90%;
         max-width: 350px;
     }
 
-    section.profile-container div.profile-wraper{
+    section.profile-container div.profile-wraper {
         padding-top: 0;
     }
 
-    section.profile-container div.profile-wraper2{
+    section.profile-container div.profile-wraper2 {
         /*
         position: absolute;
         top: 0;
@@ -295,7 +344,8 @@ section.videos div.box-video{
         align-items: center;
         width: 100%;
         height: 100%;
-        *//*
+        */
+        /*
         flex-direction: column;*/
 
         height: auto;
@@ -305,7 +355,7 @@ section.videos div.box-video{
 
     }
 
-    section.profile-container div.img-profile{
+    section.profile-container div.img-profile {
         width: 50%;
         padding-top: 70%;
         height: auto;
@@ -314,24 +364,52 @@ section.videos div.box-video{
         /*
         background-image: url(../images/img_profile.png);
         background-size: 100% 100%;*/
-    
+
     }
-    
-    section.profile-container div.text-profile{
+
+    section.profile-container div.text-profile {
         display: inline-block;
         width: 100%;
         padding: 0 30px;
 
     }
-    
+
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos div.box-video {
+        float: none;
+        width: 70%;
+        display: inline-block;
+        /*border: 5px solid white;*/
+        /*background-color: green;*/
+        padding-top: calc(70% * 0.6);
+        transition: 0.5s;
+    }
+
+    section.videos iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 580px) {
 
-    section.profile-container div.img-profile{
+    section.profile-container div.img-profile {
         width: 80%;
         padding-top: 110%;
         transition: 0.4s;
+    }
+
+    section.videos div.box-video {
+        width: 100%;
+        padding-top: calc(100% * 0.6);
     }
 }
 
